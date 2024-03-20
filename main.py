@@ -26,7 +26,7 @@ nato_dict = dict(zip(df['letter'], df['code']))
 
 
 #TODO 2. Create a list of the phonetic code words from a word that the user inputs.
-user_input = input("Which word should be changed ?").upper()
+user_input = input("Which word should be translated into NATO ABC? ?").upper()
 result = [nato_dict[letter] for letter in user_input if letter in nato_dict]
 print(result)
 
